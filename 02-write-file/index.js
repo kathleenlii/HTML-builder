@@ -16,4 +16,6 @@ stdin.on('data', data => {
     }
 });
 
-process.on('SIGINT',()=>exit());
+process.on('exit', () => {
+    exit()
+})
